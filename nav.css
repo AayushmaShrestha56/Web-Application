@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    background-color: #FFE5D9; /* Soft peach-pink */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, #FFB4A2, #FFE5D9); /* Warm pastel gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #E5989B !important; /* Slightly darker pastel pink */
+}
+
+/* Navbar Links */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #FFD7C6 !important; /* Softer pastel peach */
+    transform: scale(1.05);
+}
+
+/* Active Link Styling */
+.nav-item.active .nav-link {
+    color: #FFE5D9 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #E5989B; /* Muted rose pink */
+}
+
+/* Button Styling */
+.btn-outline-light {
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+    border-color: #E5989B; /* Soft peachy pink */
+    color: #E5989B !important;
+}
+
+.btn-outline-light:hover {
+    background-color: #E5989B;
+    border-color: #E5989B;
+    color: white !important;
+}
+
+.btn-outline-primary {
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+    border-color: #FFB4A2; /* Main coral-pink shade */
+    color: #FFB4A2 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #FFB4A2;
+    border-color: #FFB4A2;
+    color: white !important;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+    background-color: #FFB4A2; /* Soft pastel coral */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        background: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar-collapse .nav-link {
+        color: #FFB4A2 !important; /* Primary pastel pink */
+        padding: 8px 0;
+    }
+
+    .navbar-collapse .nav-item.active .nav-link {
+        color: #ffffff !important;
+        font-weight: bold;
+        border-bottom: 2px solid #E5989B; /* Muted soft pink */
+    }
+}

@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    padding: 30px;
+    background-color: #FAE3D9; /* Soft peach-pink for a warm feel */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #D291BC; /* Soft lavender */
+    font-weight: bold;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+th {
+    background-color: #FFB4A2; /* Warm pastel coral */
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Table Data */
+td {
+    background-color: #FFFFFF;
+    padding: 12px;
+    border-bottom: 1px solid #FFDAC1; /* Soft border color */
+}
+
+/* Table Row Hover Effect */
+tr:hover td {
+    background-color: #FFE5D9; /* Light pastel highlight */
+}
+
+/* Forms */
+form {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Inline Form Styling */
+.form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Input Fields */
+.form-inline input {
+    padding: 10px;
+    border: 2px solid #FFB4A2;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-inline input:focus {
+    border-color: #D291BC; /* Soft lavender focus */
+    box-shadow: 0 0 5px rgba(210, 145, 188, 0.5);
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #FFB4A2;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #E5989B;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: #D291BC;
+    border: none;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #B47EA6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .form-inline {
+        flex-direction: column;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
